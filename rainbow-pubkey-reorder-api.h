@@ -7,6 +7,7 @@
 
 // public key chunks => public key (in the standard serialization format)
 // no external dependencies
-void rainbow_pub_reorder(unsigned char *pub, const unsigned char *pubchunks);
+// return zero means success, return any nonzero value means some error
+int rainbow_pub_reorder(unsigned char *pub, const unsigned char *pubchunks);
 
 #endif // RAINBOW_PUBKEY_REORDER_API_H_INCLUDED
